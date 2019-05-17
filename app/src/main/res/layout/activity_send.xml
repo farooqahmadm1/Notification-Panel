@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendActivity">
+
+    <TextView
+        android:id="@+id/send_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="88dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/nunito_semibold"
+        android:textColor="@android:color/black"
+        android:text="Send to .."
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="30dp"
+        android:paddingVertical="18dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_below="@+id/send_user_name"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:hint="Enter Notification Message ..."
+        android:background="@drawable/border_edittext"/>
+    <Button
+        android:id="@+id/send_message_btn"
+        android:layout_below="@+id/send_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:text="Send Notification"
+        android:textAllCaps="false"
+        android:background="@drawable/user_fragment_button_border"/>
+    <ProgressBar
+        android:id="@+id/send_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark"
+        android:indeterminate="true"
+        android:visibility="invisible"/>
+</RelativeLayout>

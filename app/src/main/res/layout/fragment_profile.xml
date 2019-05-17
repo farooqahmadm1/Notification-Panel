@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/fragment_background">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_img"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/profile"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:id="@+id/profile_user_name"
+            android:layout_below="@+id/profile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="40dp"
+            android:textSize="18dp"
+            android:text="Loading..."
+            android:fontFamily="@font/nunito_semibold"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+        <Button
+            android:id="@+id/profile_logout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/nunito_semibold"
+            android:textSize="16sp"
+            android:text="Logout this Account"
+            android:textAllCaps="false"
+            android:textColor="@color/textTabBright"
+            android:background="@drawable/user_fragment_button_border"/>
+    </RelativeLayout>
+</FrameLayout>
